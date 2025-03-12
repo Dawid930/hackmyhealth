@@ -38,4 +38,13 @@ yarn-error.log*
 /.idea
 /.vscode
 *.swp
-*.swo 
+*.swo
+
+# Expo
+.expo/
+.expo-shared/
+web-build/
+dist/
+
+# Cursor
+.cursor

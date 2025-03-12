@@ -1,51 +1,70 @@
 # HackMyHealth
 
-A health monitoring and wellness application designed to help users track and improve their health metrics.
+A comprehensive health tracking and analytics mobile application that helps users monitor key biomarkers, nutrition, sleep, and physical activity to provide personalized health insights.
 
-## Project Overview
+## Features
 
-HackMyHealth aims to provide a comprehensive health tracking solution that empowers users to take control of their health through data-driven insights and personalized recommendations.
-
-## Features (Planned)
-
+### MVP Foundation (Current Phase)
+- User authentication with Supabase
+- Basic food tracking (manual entry)
 - Health metrics tracking
-- Personalized wellness recommendations
-- Progress visualization
-- Goal setting and achievement tracking
-- User authentication and data security
+- Simple analytics dashboard
+
+### Coming Soon
+- Image recognition for food tracking
+- Blood test management
+- Health device integration
+- Advanced health analytics
 
 ## Getting Started
 
 ### Prerequisites
-
-- Node.js (version 18 or higher recommended)
-- npm or yarn package manager
+- Node.js (version 18 or higher)
+- npm or yarn
+- Expo CLI
+- Supabase project
 
 ### Installation
 
 1. Clone the repository
    ```
-   git clone [repository-url]
+   git clone https://github.com/Dawid930/hackmyhealth.git
    cd hackmyhealth
    ```
 
 2. Install dependencies
    ```
    npm install
-   # or
-   yarn install
    ```
 
-3. Start the development server
+3. Create a `.env` file based on `.env.example` and add your Supabase credentials
    ```
-   npm run dev
-   # or
-   yarn dev
+   EXPO_PUBLIC_SUPABASE_URL=your-supabase-url
+   EXPO_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
    ```
 
-## Contributing
+4. Set up the database
+   - Go to your Supabase project
+   - Open the SQL Editor
+   - Run the SQL commands in `database_setup.sql`
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+5. Start the development server
+   ```
+   npx expo start
+   ```
+
+## Database Schema
+
+The application uses the following tables:
+- `profiles`: Stores user profile information
+- `food_entries`: Tracks food consumption data
+- `health_metrics`: Records various health measurements
+
+## Tech Stack
+
+- **Frontend:** React Native with TypeScript, Expo
+- **State Management:** React Context and hooks
+- **Backend:** Supabase (Authentication, PostgreSQL Database)
 
 ## License
 
