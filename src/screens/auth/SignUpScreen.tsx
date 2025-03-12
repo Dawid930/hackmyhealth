@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 import {
   View,
   Text,
@@ -10,9 +10,9 @@ import {
   Platform,
   ScrollView,
 } from "react-native"
-import { useAuth } from "../../hooks/useAuth"
-import type { NativeStackScreenProps } from "@react-navigation/native-stack"
-import { AuthStackParamList } from "../../navigation"
+import { useAuth } from '../../hooks/useAuth'
+import type { NativeStackScreenProps } from '@react-navigation/native-stack'
+import { AuthStackParamList } from '../../navigation'
 
 type Props = NativeStackScreenProps<AuthStackParamList, "SignUp">
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 import {
   View,
   Text,
@@ -10,8 +10,8 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native"
-import { supabase } from "../services/supabase"
-import { useAuth } from "../hooks/useAuth"
+import { supabase } from '../services/supabase'
+import { useAuth } from '../hooks/useAuth'
 
 const FoodTrackingScreen = () => {
   const { authState } = useAuth()

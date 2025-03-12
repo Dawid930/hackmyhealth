@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import {
   View,
   Text,
@@ -7,7 +7,7 @@ import {
   ScrollView,
   Alert,
 } from "react-native"
-import { useAuth } from "../hooks/useAuth"
+import { useAuth } from '../hooks/useAuth'
 
 const ProfileScreen = () => {
   const { authState, signOut } = useAuth()

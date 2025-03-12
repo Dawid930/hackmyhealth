@@ -1,6 +1,6 @@
-import React from "react"
-import { View, Text, StyleSheet, ScrollView } from "react-native"
-import { useAuth } from "../hooks/useAuth"
+import React from 'react'
+import { View, Text, StyleSheet, ScrollView } from 'react-native'
+import { useAuth } from '../hooks/useAuth'
 
 const HomeScreen = () => {
   const { authState } = useAuth()

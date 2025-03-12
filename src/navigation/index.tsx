@@ -2,15 +2,15 @@ import React from "react"
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import { useAuth } from "../hooks/useAuth"
+import { useAuth } from "@hooks/useAuth"
 
 // Import screens (we'll create these soon)
-import SignInScreen from "../screens/auth/SignInScreen"
-import SignUpScreen from "../screens/auth/SignUpScreen"
-import HomeScreen from "../screens/HomeScreen"
-import FoodTrackingScreen from "../screens/FoodTrackingScreen"
-import HealthMetricsScreen from "../screens/HealthMetricsScreen"
-import ProfileScreen from "../screens/ProfileScreen"
+import SignInScreen from "@screens/auth/SignInScreen"
+import SignUpScreen from "@screens/auth/SignUpScreen"
+import HomeScreen from "@screens/HomeScreen"
+import FoodTrackingScreen from "@screens/FoodTrackingScreen"
+import HealthMetricsScreen from "@screens/HealthMetricsScreen"
+import ProfileScreen from "@screens/ProfileScreen"
 
 // Define navigation types
 export type AuthStackParamList = {
